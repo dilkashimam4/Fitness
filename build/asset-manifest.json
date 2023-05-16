@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dilkashimam.github.io/Modern_Fitness/static/css/main.7965e470.css",
+    "main.js": "/dilkashimam.github.io/Modern_Fitness/static/js/main.a043b476.js",
+    "static/media/banner.png": "/dilkashimam.github.io/Modern_Fitness/static/media/banner.5209b5e92a864ca0c615.png",
+    "static/media/fitbytes2.png": "/dilkashimam.github.io/Modern_Fitness/static/media/fitbytes2.b45738c8680e22c26fd2.png",
+    "static/media/gym.png": "/dilkashimam.github.io/Modern_Fitness/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/dilkashimam.github.io/Modern_Fitness/index.html",
+    "main.7965e470.css.map": "/dilkashimam.github.io/Modern_Fitness/static/css/main.7965e470.css.map",
+    "main.a043b476.js.map": "/dilkashimam.github.io/Modern_Fitness/static/js/main.a043b476.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7965e470.css",
+    "static/js/main.a043b476.js"
+  ]
+}
