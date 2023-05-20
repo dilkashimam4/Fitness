@@ -1,0 +1,6 @@
+
+
+GET https://exercisedb.p.rapidapi.com/exercises/exercise/1/ HTTP/1.1
+
+"X-RapidAPI-Key": "182c69e1e1msh3a32261689c636cp103ba8jsn0c13c902b03a";
+"X-RapidAPI-Host": "exercisedb.p.rapidapi.com";

@@ -7,7 +7,7 @@ const ExerciseCard = ({ exercise }) => {
         window.scrollTo({top:0, behavior:'smooth'})
     }
   return (
-      <Link to={`/exercise/${exercise.id}`} className='exercise-card' onClick={handleScroll}>
+      <Link to={`/exercises/${exercise.id}`} className='exercise-card' onClick={handleScroll}>
           <img src={exercise.gifUrl} alt={exercise.name} loading='lazy'/>
           <Stack direction='row'>
               <Button sx={{

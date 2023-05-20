@@ -29,6 +29,7 @@ const Navbar = ({ user }) => {
         className='nav-items'
       >
         <Link to='/' style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #ff2625' }}>Home</Link>
+        {/* <Link to='/exercises/' style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #ff2625' }}>Exercises</Link> */}
         <a href="#exercises" style={{ textDecoration: 'none', color: '#3A1212' }}>Exercises</a>
         {!user.name && !user.pic ?
           <Link to='/login' style={{ textDecoration: 'none', color: '#3A1212', }}>Login</Link> :

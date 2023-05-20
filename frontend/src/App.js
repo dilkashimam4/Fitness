@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Box } from '@mui/material'
 import './App.css';
 import Home from './pages/Home'
@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   const [user, setUser] = useState({ name: "", pic: "" })
+  const [exercises, setExercises] = useState([])
   useEffect(() => {
     async function onCall() {
       try {
@@ -45,18 +46,18 @@ const App = () => {
           {
             user.name && user.pic ? (
               <>
-                <Route path='/' exact element={<Home />} />
-                <Route path='/exercise/:id' exact element={<ExerciseDetail />} />
+                <Route path='/' exact  element={<Home  setExercises={setExercises} exercises={exercises}/>} />
+                <Route path='/exercises/:id' exact  element={<ExerciseDetail exercises={exercises} />} />
                 <Route path='/*' element={<Navigate to={"/"} replace />} />
               </>
-            ) :
+             ) :
               (
                 <>
                   <Route path='/login' exact element={<Login />} />
                   <Route path='*' element={<Navigate to={"/login"} replace />} />
                 </>
               )
-          }
+            }:
         </Routes>
         <Footer />
       </Box>

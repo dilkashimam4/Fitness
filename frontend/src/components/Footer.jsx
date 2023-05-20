@@ -10,7 +10,7 @@ const Footer = () => {
       <Stack gap="5px" sx={{ alignItems: 'center' }} flexWrap="wrap" px="40px" pt="28px"> 
         <img src={Logo} alt="logo" style={{ width: '200px', height: '32px' }} />
         <Typography variant="h5" fontWeight={600} sx={{ fontSize: { lg: '18px', xs: '18px' } }} mt="10px" textAlign="center" pb="12px">
-          Made with ❤ by AD Grup
+          Made with ❤ by AD Grupe
         </Typography>
         <Typography gap="20px" sx={{
           flexDirection: 'row',

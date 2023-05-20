@@ -29,6 +29,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         exercisesData=await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,
         exerciseOptions)
       }
+      console.log({exercisesData})
       setExercises(exercisesData)
     }
     fetchExercisesData()
@@ -50,7 +51,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         justifyContent='center'
       >
         {currentExercises.map((exercise, i) => (
-          <ExerciseCard key={i} exercise={ exercise} />
+          <ExerciseCard key={i} exercise={ exercise } />
         ))}
       </Stack>
       <Stack mt='100px' alignItems='center'>

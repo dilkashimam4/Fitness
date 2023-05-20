@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import Loader from './Loader'
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
-    if(!exerciseVideos.length)return <Loader/>
+    if(!exerciseVideos?.length)return <Loader/>  //exerciseVideos && 
   return (
       <Box sx={{
           marginTop: { lg: '200px', xs: '20px' },
